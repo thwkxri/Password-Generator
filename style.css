@@ -106,4 +106,44 @@ h2 {
 	justify-content: space-between;
 	align-items: center;
 	margin: 15px 0;
+	border: none;
+}
+
+#length {
+	width: 50px;
+	font-family: 'Muli', sans-serif;
+	padding: 3px 5px;
+	border: 2px solid #fff; 
+	background: none;
+	color: #fff;
+	font-weight: 600;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='checkbox'] {
+	width: 20px;  
+	height: 20px; 
+	-webkit-appearance: none; 
+	appearance: none; 
+	border: 2px solid #fff; 
+	border-radius: 4px; 
+	cursor: pointer; 
+	position: relative;
+}
+
+
+input[type='checkbox']:checked::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 11px; 
+	height: 11px; 
+	background-color: #fff;
+	border-radius: 2px; 
 }
