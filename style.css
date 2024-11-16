@@ -69,10 +69,10 @@ h2 {
 }
 
 #copy-notify {
-	font-size: 10px;
+	font-size: 9px;
 	position: absolute;
 	right: 50px;
-	bottom: 3px;
+	bottom: 2px;
 	color: grey;
 	font-weight: bold;
 	display: none;
