@@ -6,6 +6,7 @@ const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
+const copyNotifyEl = document.getElementById('copy-notify');
 
 function generate() {
   let dictionary = '';
@@ -39,12 +40,13 @@ function generate() {
   }
   
   resultEl.textContent = password;
+  copyNotifyEl.style.display = 'none';
 }
 
 clipboardEl.addEventListener('click', () => {
   const textToCopy = resultEl.textContent; 
   navigator.clipboard.writeText(textToCopy);
-  alert('Текст скопирован: ' + textToCopy);
+  copyNotifyEl.style.display = 'block';
 });
 
 generateEl.addEventListener('click', generate);
