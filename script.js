@@ -19,7 +19,7 @@ function generate() {
   }
 
   if (numbersEl.checked) {
-    dictionary += '1234567890';
+    dictionary += '12345678901234567890';
   }
 
   if (symbolsEl.checked) {
